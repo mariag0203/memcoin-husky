@@ -1,0 +1,13 @@
+// SPDX-License-Identifier: MIT
+// Generated with Spectral Syntax
+
+pragma solidity ^0.8.0;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
+contract DoggyHus is ERC20 {
+    constructor() ERC20("DoggyHus", "HUSK") {
+        uint256 initialSupply = 100000000 * (10**18);
+        _mint(msg.sender, initialSupply);
+    }
+}
